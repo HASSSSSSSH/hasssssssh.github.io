@@ -121,12 +121,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">4</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">6</span></a>
 
   </li>
   </ul>
@@ -154,6 +154,109 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hasssssssh.github.io/2021/08/08/jni-specification-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/blog-avatar.jpg">
+      <meta itemprop="name" content="HASSH">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HASSH's Site">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/08/jni-specification-notes/" class="post-title-link" itemprop="url">JNI 规范笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="创建时间：2021-08-08 17:44:16" itemprop="dateCreated datePublished" datetime="2021-08-08T17:44:16+08:00">2021-08-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <!-- TODO: 关于 JavaVM 和 JNIEnv -->
+
+<!-- TODO: 一些常用的 JNI 函数 -->
+
+<!-- TODO: 本地代码调用 Java 方法 -->
+
+<!-- TODO: 局部引用和全局引用 -->
+
+<!-- TODO: 线程 -->
+
+<!-- TODO: 异常处理 -->
+
+<!-- TODO: System.loadLibrary 的加载过程? JNI_OnLoad 的调用过程? -->
+
+<!-- TODO: 是否有加载本地库的其他方式? -->
+
+<!-- TODO: 静态注册和动态注册的本地方法查找过程? 什么是 "让 runtime 使用 dlsym 进行动态查找"? -->
+
+<!-- TODO: 为什么 c++ 需要写 "extern "C""? -->
+
+<!-- TODO: JNIEXPORT? JNICALL? -->
+
+<!-- TODO: reinterpret_cast 是什么? -->
+
+
+
+<h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><p><strong>JNI (Java Native Interface)</strong> 定义了运行在虚拟机中的 Java 代码与本地代码 (使用 C, C++ 等语言编写) 交互的方式。</p>
+<p>JNI 规范可在 <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/jniTOC.html">Java Native Interface Specification</a> 查阅，接下来对规范中的部分内容做些笔记。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/08/jni-specification-notes/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -208,7 +311,7 @@
 
       
           <blockquote>
-<p>本文基于源代码：android-security-10.0.0_r56</p>
+<p>本文基于源代码：<a target="_blank" rel="noopener" href="https://cs.android.com/android/platform/superproject/+/android-security-10.0.0_r56:">android-security-10.0.0_r56</a></p>
 </blockquote>
 <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><!-- TODO: 关于 init 进程更好的概述 -->
 
@@ -607,14 +710,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">Posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">Categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
